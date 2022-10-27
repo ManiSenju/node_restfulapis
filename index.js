@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000
 
 //mongoose connection
 
-const dbUrl = "mongodb+srv://test:test@cluster0.bb7lncc.mongodb.net/?retryWrites=true&w=majority";
+const dbUrl = "mongodb+srv://<dbname>:<password>@cluster0.bb7lncc.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(dbUrl, {useNewUrlParser:true,useUnifiedTopology:true}, (err) => {
     if(err){
         console.log(err)
